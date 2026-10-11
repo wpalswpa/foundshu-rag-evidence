@@ -1,0 +1,34 @@
+[
+  {
+    "file": "docs/images/customer-start.png",
+    "description": "예시 체험 첫 화면",
+    "sha256": "b3d256c252bd873e293bc9cd3b90243dfddca38cb2b0d3d9728b6c7408c747e6",
+    "type": "original_local_prototype_screenshot",
+    "data": "synthetic_example",
+    "retouched": false
+  },
+  {
+    "file": "docs/images/customer-review.png",
+    "description": "보장별 확인 상태",
+    "sha256": "c4b06fc6efc8cd93482d86a1cea51fd5912ebf897dda575a681140c5c87f5086",
+    "type": "original_local_prototype_screenshot",
+    "data": "synthetic_example",
+    "retouched": false
+  },
+  {
+    "file": "docs/images/contract-question.png",
+    "description": "계약에 따른 조건 질문",
+    "sha256": "39020479cb08f52baffdb99b6be1db1508f903285800796476180104b77531e2",
+    "type": "original_local_prototype_screenshot",
+    "data": "synthetic_example",
+    "retouched": false
+  },
+  {
+    "file": "docs/images/research-chat.png",
+    "description": "생성형 연구 시험판의 입력 화면",
+    "sha256": "45b412b1b4922012ecb7eeb6d120e778943de5b245c11ef0e40f2051b652afe0",
+    "type": "original_local_prototype_screenshot",
+    "data": "synthetic_example",
+    "retouched": false
+  }
+]

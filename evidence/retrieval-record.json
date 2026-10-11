@@ -1,0 +1,2650 @@
+{
+  "run_at": "2026-10-11T15:31:17.367456+00:00",
+  "fixture_sha256": "626187e591636fff327abbd1243c571f0818cc1f0a3a483f21da50cc2cd3c76b",
+  "fixture_written_at": "2026-10-10T02:30:10.861624+00:00",
+  "kind": "single_author_synthetic_boundary_evaluation",
+  "generation_used": false,
+  "dense_embedding_model": "hf.co/mykor/KURE-v1-gguf:Q8_0",
+  "dense_skipped": null,
+  "chunks": 79,
+  "sources": [
+    {
+      "id": "sf-direct-2605-1",
+      "official_url": "https://direct.samsungfire.com/docs/realloss.pdf",
+      "file_sha256": "db0ed9738c9f59fbb28b678b910e0bdd3ef4bf08bdac52643c2e2dd167003415",
+      "indexed_pages": [
+        1,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "id": "kb-health-2304",
+      "official_url": "https://www.kbinsure.co.kr/CG802030003.ec?fileNm=23937_1_1.pdf",
+      "file_sha256": "d7e75427e22344ee3b1d33c6e270ee785a5cdab680cb5e003f21908094104097",
+      "indexed_pages": [
+        264,
+        265,
+        266,
+        267,
+        268,
+        269
+      ]
+    }
+  ],
+  "code_sha256": {
+    "app/policy_rag.py": "d0a424321b5203228ce44864deba511d90d139abe1b0221a24037b0e89239327",
+    "app/terms_evidence.py": "ba7b794b1cadda64890c11a8e92d48d128a0e6b42a9e309c25ed58853b383bf7",
+    "app/data/terms/catalog.json": "ef47dd92a85b34f6be288675063c7d40b5646b924f7f771ebbe37f2b37fb7673",
+    "app/knowledge.py": "657be8e6c6c0b57add11395910558b382698af154a55e2463b6c17d6d805424b",
+    "_claude/challenge/compare_retrieval.py": "f0feee42cdad54065316f53068981189a63424e409cfdbe3896b49ccfa4aba49"
+  },
+  "summary": {
+    "A_raw": {
+      "cases": 24,
+      "supported_cases": 18,
+      "all_required_found_cases": 3,
+      "required_groups": 19,
+      "recovered_groups": 4,
+      "wrong_scope_cases": 24,
+      "forbidden_attachment_cases": 6,
+      "negative_cases": 6,
+      "mean_citations_supported": 5,
+      "median_ms_warm": 196.43,
+      "original_validation_failures": 0
+    },
+    "B_scoped": {
+      "cases": 24,
+      "supported_cases": 18,
+      "all_required_found_cases": 18,
+      "required_groups": 19,
+      "recovered_groups": 19,
+      "wrong_scope_cases": 0,
+      "forbidden_attachment_cases": 0,
+      "negative_cases": 6,
+      "mean_citations_supported": 5,
+      "median_ms_warm": 76.51,
+      "original_validation_failures": 0
+    },
+    "C_scoped_ontology": {
+      "cases": 24,
+      "supported_cases": 18,
+      "all_required_found_cases": 18,
+      "required_groups": 19,
+      "recovered_groups": 19,
+      "wrong_scope_cases": 0,
+      "forbidden_attachment_cases": 0,
+      "negative_cases": 6,
+      "mean_citations_supported": 5,
+      "median_ms_warm": 73.51,
+      "original_validation_failures": 0
+    },
+    "D_existing_bundle": {
+      "cases": 24,
+      "supported_cases": 18,
+      "all_required_found_cases": 18,
+      "required_groups": 19,
+      "recovered_groups": 19,
+      "wrong_scope_cases": 0,
+      "forbidden_attachment_cases": 0,
+      "negative_cases": 6,
+      "mean_citations_supported": 8.44,
+      "median_ms_warm": 146.09,
+      "original_validation_failures": 0
+    },
+    "E_dense_raw": {
+      "cases": 24,
+      "supported_cases": 18,
+      "all_required_found_cases": 4,
+      "required_groups": 19,
+      "recovered_groups": 5,
+      "wrong_scope_cases": 24,
+      "forbidden_attachment_cases": 6,
+      "negative_cases": 6,
+      "mean_citations_supported": 5,
+      "median_ms_warm": 341.23,
+      "original_validation_failures": 0
+    },
+    "F_dense_scoped": {
+      "cases": 24,
+      "supported_cases": 18,
+      "all_required_found_cases": 17,
+      "required_groups": 19,
+      "recovered_groups": 18,
+      "wrong_scope_cases": 0,
+      "forbidden_attachment_cases": 0,
+      "negative_cases": 6,
+      "mean_citations_supported": 5,
+      "median_ms_warm": 251.93,
+      "original_validation_failures": 0
+    }
+  },
+  "rows": [
+    {
+      "id": "B01",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.7486816998571157
+    },
+    {
+      "id": "B01",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:1981"
+      ],
+      "valid_originals": true,
+      "seconds": 0.365641999989748
+    },
+    {
+      "id": "B01",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.26835240004584193
+    },
+    {
+      "id": "B01",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.3028928996063769
+    },
+    {
+      "id": "B01",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:264:926",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:268:1800"
+      ],
+      "valid_originals": true,
+      "seconds": 0.3611451000906527
+    },
+    {
+      "id": "B01",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:0",
+        "kb-health-2304:264:1051"
+      ],
+      "valid_originals": true,
+      "seconds": 0.21772760013118386
+    },
+    {
+      "id": "B02",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.30805019987747073
+    },
+    {
+      "id": "B02",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:900"
+      ],
+      "valid_originals": true,
+      "seconds": 0.13227599998936057
+    },
+    {
+      "id": "B02",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.10631609987467527
+    },
+    {
+      "id": "B02",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.1428186995908618
+    },
+    {
+      "id": "B02",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2279246998950839
+    },
+    {
+      "id": "B02",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:900",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:1081"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2095179003663361
+    },
+    {
+      "id": "B03",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:269:819",
+        "kb-health-2304:264:926",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:266:79",
+        "kb-health-2304:266:225"
+      ],
+      "valid_originals": true,
+      "seconds": 0.13112519960850477
+    },
+    {
+      "id": "B03",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:1081"
+      ],
+      "valid_originals": true,
+      "seconds": 0.09695699997246265
+    },
+    {
+      "id": "B03",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.04924389999359846
+    },
+    {
+      "id": "B03",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.10295929992571473
+    },
+    {
+      "id": "B03",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:266:79",
+        "kb-health-2304:264:926",
+        "kb-health-2304:269:819",
+        "kb-health-2304:266:102"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2323080999776721
+    },
+    {
+      "id": "B03",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.24670289969071746
+    },
+    {
+      "id": "B04",
+      "method": "A_raw",
+      "required": 2,
+      "recovered": 1,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:102"
+      ],
+      "valid_originals": true,
+      "seconds": 0.17722139973193407
+    },
+    {
+      "id": "B04",
+      "method": "B_scoped",
+      "required": 2,
+      "recovered": 2,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:266:630",
+        "kb-health-2304:267:103",
+        "kb-health-2304:267:1216"
+      ],
+      "valid_originals": true,
+      "seconds": 0.08318130020052195
+    },
+    {
+      "id": "B04",
+      "method": "C_scoped_ontology",
+      "required": 2,
+      "recovered": 2,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:267:103",
+        "kb-health-2304:267:1003",
+        "kb-health-2304:266:630"
+      ],
+      "valid_originals": true,
+      "seconds": 0.07347690034657717
+    },
+    {
+      "id": "B04",
+      "method": "D_existing_bundle",
+      "required": 2,
+      "recovered": 2,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 9,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:267:103",
+        "kb-health-2304:267:1003",
+        "kb-health-2304:266:630",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:2430",
+        "kb-health-2304:267:0",
+        "kb-health-2304:267:1216"
+      ],
+      "valid_originals": true,
+      "seconds": 0.15305129997432232
+    },
+    {
+      "id": "B04",
+      "method": "E_dense_raw",
+      "required": 2,
+      "recovered": 1,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:266:102",
+        "kb-health-2304:264:926"
+      ],
+      "valid_originals": true,
+      "seconds": 0.33968340000137687
+    },
+    {
+      "id": "B04",
+      "method": "F_dense_scoped",
+      "required": 2,
+      "recovered": 2,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:630",
+        "kb-health-2304:266:2430"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2656531003303826
+    },
+    {
+      "id": "B05",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819"
+      ],
+      "valid_originals": true,
+      "seconds": 0.14746969984844327
+    },
+    {
+      "id": "B05",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:0",
+        "kb-health-2304:268:900"
+      ],
+      "valid_originals": true,
+      "seconds": 0.07795039983466268
+    },
+    {
+      "id": "B05",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:900",
+        "kb-health-2304:268:2019"
+      ],
+      "valid_originals": true,
+      "seconds": 0.07353779999539256
+    },
+    {
+      "id": "B05",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 9,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:900",
+        "kb-health-2304:268:2019",
+        "kb-health-2304:267:2158",
+        "kb-health-2304:268:0",
+        "kb-health-2304:269:0",
+        "kb-health-2304:269:687"
+      ],
+      "valid_originals": true,
+      "seconds": 0.1477768998593092
+    },
+    {
+      "id": "B05",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:266:79",
+        "kb-health-2304:266:102",
+        "kb-health-2304:267:1393",
+        "kb-health-2304:269:819"
+      ],
+      "valid_originals": true,
+      "seconds": 0.39566229982301593
+    },
+    {
+      "id": "B05",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:900",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:269:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.3377463002689183
+    },
+    {
+      "id": "B06",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.14335980033501983
+    },
+    {
+      "id": "B06",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:264:942"
+      ],
+      "valid_originals": true,
+      "seconds": 0.07507329992949963
+    },
+    {
+      "id": "B06",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.07289859978482127
+    },
+    {
+      "id": "B06",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.14439320005476475
+    },
+    {
+      "id": "B06",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:264:926",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:269:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.20474460022524
+    },
+    {
+      "id": "B06",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:900",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:1081"
+      ],
+      "valid_originals": true,
+      "seconds": 0.20565199991688132
+    },
+    {
+      "id": "B07",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.12227350007742643
+    },
+    {
+      "id": "B07",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:1981"
+      ],
+      "valid_originals": true,
+      "seconds": 0.05356730008497834
+    },
+    {
+      "id": "B07",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.049966299906373024
+    },
+    {
+      "id": "B07",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.10175910033285618
+    },
+    {
+      "id": "B07",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:264:926",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:852"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2304054000414908
+    },
+    {
+      "id": "B07",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2571663996204734
+    },
+    {
+      "id": "B08",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:852"
+      ],
+      "valid_originals": true,
+      "seconds": 0.10856899991631508
+    },
+    {
+      "id": "B08",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.04948050016537309
+    },
+    {
+      "id": "B08",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.046987100038677454
+    },
+    {
+      "id": "B08",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.10724340006709099
+    },
+    {
+      "id": "B08",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:264:926",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:266:102"
+      ],
+      "valid_originals": true,
+      "seconds": 0.1990543999709189
+    },
+    {
+      "id": "B08",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:0",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:1081"
+      ],
+      "valid_originals": true,
+      "seconds": 0.170136499684304
+    },
+    {
+      "id": "B09",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:264:926",
+        "kb-health-2304:265:900",
+        "kb-health-2304:269:819"
+      ],
+      "valid_originals": true,
+      "seconds": 0.12926730001345277
+    },
+    {
+      "id": "B09",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:2194",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1081"
+      ],
+      "valid_originals": true,
+      "seconds": 0.047872299794107676
+    },
+    {
+      "id": "B09",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:900",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:1081"
+      ],
+      "valid_originals": true,
+      "seconds": 0.059754000045359135
+    },
+    {
+      "id": "B09",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.18626509979367256
+    },
+    {
+      "id": "B09",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:264:926",
+        "kb-health-2304:269:819",
+        "kb-health-2304:265:900"
+      ],
+      "valid_originals": true,
+      "seconds": 0.29308649990707636
+    },
+    {
+      "id": "B09",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:0",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2582344999536872
+    },
+    {
+      "id": "B10",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "sf-direct-2605-1:31:1800"
+      ],
+      "valid_originals": true,
+      "seconds": 0.20027780020609498
+    },
+    {
+      "id": "B10",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.08644860005006194
+    },
+    {
+      "id": "B10",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.09609160013496876
+    },
+    {
+      "id": "B10",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.30041200015693903
+    },
+    {
+      "id": "B10",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1981",
+        "kb-health-2304:267:1003",
+        "kb-health-2304:266:79",
+        "kb-health-2304:264:926",
+        "kb-health-2304:267:1348"
+      ],
+      "valid_originals": true,
+      "seconds": 0.42745810002088547
+    },
+    {
+      "id": "B10",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.30901720002293587
+    },
+    {
+      "id": "B11",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:225",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:269:1144",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1713"
+      ],
+      "valid_originals": true,
+      "seconds": 0.18842920009046793
+    },
+    {
+      "id": "B11",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:900",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.10848550032824278
+    },
+    {
+      "id": "B11",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:942",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.18446459993720055
+    },
+    {
+      "id": "B11",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.26293089985847473
+    },
+    {
+      "id": "B11",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:1144"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2834635996259749
+    },
+    {
+      "id": "B11",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.23476390028372407
+    },
+    {
+      "id": "B12",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:266:102"
+      ],
+      "valid_originals": true,
+      "seconds": 0.15786089980974793
+    },
+    {
+      "id": "B12",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:900"
+      ],
+      "valid_originals": true,
+      "seconds": 0.08833089983090758
+    },
+    {
+      "id": "B12",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:264:1442"
+      ],
+      "valid_originals": true,
+      "seconds": 0.09077550005167723
+    },
+    {
+      "id": "B12",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 8,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:265:1981",
+        "kb-health-2304:265:1081",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:0",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:2194"
+      ],
+      "valid_originals": true,
+      "seconds": 0.17173349997028708
+    },
+    {
+      "id": "B12",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:264:926",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:264:942"
+      ],
+      "valid_originals": true,
+      "seconds": 0.289520800113678
+    },
+    {
+      "id": "B12",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:942",
+        "kb-health-2304:264:1051",
+        "kb-health-2304:264:1442",
+        "kb-health-2304:265:900",
+        "kb-health-2304:265:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.22898649983108044
+    },
+    {
+      "id": "B13",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:266:102",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.12827950017526746
+    },
+    {
+      "id": "B13",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:266:630",
+        "kb-health-2304:267:1216",
+        "kb-health-2304:267:103"
+      ],
+      "valid_originals": true,
+      "seconds": 0.05531270010396838
+    },
+    {
+      "id": "B13",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:267:103",
+        "kb-health-2304:267:1216",
+        "kb-health-2304:267:1003"
+      ],
+      "valid_originals": true,
+      "seconds": 0.10055100033059716
+    },
+    {
+      "id": "B13",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 9,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:267:103",
+        "kb-health-2304:267:1003",
+        "kb-health-2304:266:630",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:2430",
+        "kb-health-2304:267:0",
+        "kb-health-2304:267:1216"
+      ],
+      "valid_originals": true,
+      "seconds": 0.1519539998844266
+    },
+    {
+      "id": "B13",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:266:102",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.30788399977609515
+    },
+    {
+      "id": "B13",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:225",
+        "kb-health-2304:267:103",
+        "kb-health-2304:267:1216"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2905197995714843
+    },
+    {
+      "id": "B14",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:266:225",
+        "kb-health-2304:264:926"
+      ],
+      "valid_originals": true,
+      "seconds": 0.13807009998708963
+    },
+    {
+      "id": "B14",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:225",
+        "kb-health-2304:266:102",
+        "kb-health-2304:267:103",
+        "kb-health-2304:266:630",
+        "kb-health-2304:267:1216"
+      ],
+      "valid_originals": true,
+      "seconds": 0.060371499974280596
+    },
+    {
+      "id": "B14",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:103",
+        "kb-health-2304:266:225",
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:630",
+        "kb-health-2304:267:1003"
+      ],
+      "valid_originals": true,
+      "seconds": 0.07497369963675737
+    },
+    {
+      "id": "B14",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 9,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:267:103",
+        "kb-health-2304:266:225",
+        "kb-health-2304:267:1003",
+        "kb-health-2304:266:630",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:2430",
+        "kb-health-2304:267:0",
+        "kb-health-2304:267:1216"
+      ],
+      "valid_originals": true,
+      "seconds": 0.12627010000869632
+    },
+    {
+      "id": "B14",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:0",
+        "kb-health-2304:269:819",
+        "kb-health-2304:266:102"
+      ],
+      "valid_originals": true,
+      "seconds": 0.34009100031107664
+    },
+    {
+      "id": "B14",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:267:103",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:630"
+      ],
+      "valid_originals": true,
+      "seconds": 0.34228109987452626
+    },
+    {
+      "id": "B15",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819"
+      ],
+      "valid_originals": true,
+      "seconds": 0.19258749997243285
+    },
+    {
+      "id": "B15",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:269:0",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.26649320032447577
+    },
+    {
+      "id": "B15",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:269:0",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:900"
+      ],
+      "valid_originals": true,
+      "seconds": 0.20763600012287498
+    },
+    {
+      "id": "B15",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 9,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:269:0",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:900",
+        "kb-health-2304:267:2158",
+        "kb-health-2304:268:0",
+        "kb-health-2304:268:2019",
+        "kb-health-2304:269:687"
+      ],
+      "valid_originals": true,
+      "seconds": 0.23694609990343451
+    },
+    {
+      "id": "B15",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:264:926",
+        "kb-health-2304:267:1713"
+      ],
+      "valid_originals": true,
+      "seconds": 0.5405946001410484
+    },
+    {
+      "id": "B15",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1713",
+        "kb-health-2304:267:1393",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:900",
+        "kb-health-2304:268:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.5116108995862305
+    },
+    {
+      "id": "B16",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819"
+      ],
+      "valid_originals": true,
+      "seconds": 0.24260020023211837
+    },
+    {
+      "id": "B16",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:268:0",
+        "kb-health-2304:269:0",
+        "kb-health-2304:268:1800"
+      ],
+      "valid_originals": true,
+      "seconds": 0.12189280008897185
+    },
+    {
+      "id": "B16",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:269:0",
+        "kb-health-2304:268:900"
+      ],
+      "valid_originals": true,
+      "seconds": 0.129339300096035
+    },
+    {
+      "id": "B16",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 9,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:269:0",
+        "kb-health-2304:268:900",
+        "kb-health-2304:267:2158",
+        "kb-health-2304:268:0",
+        "kb-health-2304:268:2019",
+        "kb-health-2304:269:687"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2867689998820424
+    },
+    {
+      "id": "B16",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:264:926",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.513377099763602
+    },
+    {
+      "id": "B16",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:268:900",
+        "kb-health-2304:269:0",
+        "kb-health-2304:268:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.42788319988176227
+    },
+    {
+      "id": "B17",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:266:102",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.40804689982905984
+    },
+    {
+      "id": "B17",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:630",
+        "kb-health-2304:267:103"
+      ],
+      "valid_originals": true,
+      "seconds": 0.15226999996230006
+    },
+    {
+      "id": "B17",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:267:103",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:630"
+      ],
+      "valid_originals": true,
+      "seconds": 0.15137850027531385
+    },
+    {
+      "id": "B17",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 9,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:225",
+        "kb-health-2304:267:103",
+        "kb-health-2304:267:1003",
+        "kb-health-2304:266:630",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:2430",
+        "kb-health-2304:267:0",
+        "kb-health-2304:267:1216"
+      ],
+      "valid_originals": true,
+      "seconds": 0.20145690022036433
+    },
+    {
+      "id": "B17",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:102"
+      ],
+      "valid_originals": true,
+      "seconds": 0.4760746001265943
+    },
+    {
+      "id": "B17",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:266:102",
+        "kb-health-2304:266:1530",
+        "kb-health-2304:266:225",
+        "kb-health-2304:266:630",
+        "kb-health-2304:266:2430"
+      ],
+      "valid_originals": true,
+      "seconds": 0.42425830010324717
+    },
+    {
+      "id": "B18",
+      "method": "A_raw",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:267:1393",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:1144"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2868661996908486
+    },
+    {
+      "id": "B18",
+      "method": "B_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1713",
+        "kb-health-2304:267:1393",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:269:687",
+        "kb-health-2304:268:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.13056359998881817
+    },
+    {
+      "id": "B18",
+      "method": "C_scoped_ontology",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1713",
+        "kb-health-2304:267:1393",
+        "kb-health-2304:269:0",
+        "kb-health-2304:268:2019",
+        "kb-health-2304:269:687"
+      ],
+      "valid_originals": true,
+      "seconds": 0.14814209984615445
+    },
+    {
+      "id": "B18",
+      "method": "D_existing_bundle",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 9,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:2019",
+        "kb-health-2304:268:0",
+        "kb-health-2304:267:2158",
+        "kb-health-2304:268:900",
+        "kb-health-2304:269:0",
+        "kb-health-2304:269:687"
+      ],
+      "valid_originals": true,
+      "seconds": 0.28706839960068464
+    },
+    {
+      "id": "B18",
+      "method": "E_dense_raw",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": true,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:267:1713",
+        "kb-health-2304:266:79",
+        "kb-health-2304:266:225",
+        "kb-health-2304:269:819"
+      ],
+      "valid_originals": true,
+      "seconds": 0.5827210997231305
+    },
+    {
+      "id": "B18",
+      "method": "F_dense_scoped",
+      "required": 1,
+      "recovered": 1,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1713",
+        "kb-health-2304:267:1393",
+        "kb-health-2304:268:1800",
+        "kb-health-2304:268:900",
+        "kb-health-2304:268:0"
+      ],
+      "valid_originals": true,
+      "seconds": 0.41727959970012307
+    },
+    {
+      "id": "B19",
+      "method": "A_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2384939999319613
+    },
+    {
+      "id": "B19",
+      "method": "B_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 2.110004425048828e-05
+    },
+    {
+      "id": "B19",
+      "method": "C_scoped_ontology",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 2.5997869670391083e-06
+    },
+    {
+      "id": "B19",
+      "method": "D_existing_bundle",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 0.0003264998085796833
+    },
+    {
+      "id": "B19",
+      "method": "E_dense_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1713"
+      ],
+      "valid_originals": true,
+      "seconds": 0.3350061997771263
+    },
+    {
+      "id": "B19",
+      "method": "F_dense_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 6.800051778554916e-06
+    },
+    {
+      "id": "B20",
+      "method": "A_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2238872996531427
+    },
+    {
+      "id": "B20",
+      "method": "B_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 8.00006091594696e-06
+    },
+    {
+      "id": "B20",
+      "method": "C_scoped_ontology",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 2.00001522898674e-06
+    },
+    {
+      "id": "B20",
+      "method": "D_existing_bundle",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 0.00026929983869194984
+    },
+    {
+      "id": "B20",
+      "method": "E_dense_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1713"
+      ],
+      "valid_originals": true,
+      "seconds": 0.4234985997900367
+    },
+    {
+      "id": "B20",
+      "method": "F_dense_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 9.09995287656784e-06
+    },
+    {
+      "id": "B21",
+      "method": "A_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.2643038001842797
+    },
+    {
+      "id": "B21",
+      "method": "B_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 8.499715477228165e-06
+    },
+    {
+      "id": "B21",
+      "method": "C_scoped_ontology",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 1.8998980522155762e-06
+    },
+    {
+      "id": "B21",
+      "method": "D_existing_bundle",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 0.007100100163370371
+    },
+    {
+      "id": "B21",
+      "method": "E_dense_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1713"
+      ],
+      "valid_originals": true,
+      "seconds": 0.37644270015880466
+    },
+    {
+      "id": "B21",
+      "method": "F_dense_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 7.300172001123428e-06
+    },
+    {
+      "id": "B22",
+      "method": "A_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.21113809989765286
+    },
+    {
+      "id": "B22",
+      "method": "B_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 7.899943739175797e-06
+    },
+    {
+      "id": "B22",
+      "method": "C_scoped_ontology",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 2.299901098012924e-06
+    },
+    {
+      "id": "B22",
+      "method": "D_existing_bundle",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 0.00026139989495277405
+    },
+    {
+      "id": "B22",
+      "method": "E_dense_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1713"
+      ],
+      "valid_originals": true,
+      "seconds": 0.380787200294435
+    },
+    {
+      "id": "B22",
+      "method": "F_dense_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 7.4999406933784485e-06
+    },
+    {
+      "id": "B23",
+      "method": "A_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1348",
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1393"
+      ],
+      "valid_originals": true,
+      "seconds": 0.21982369991019368
+    },
+    {
+      "id": "B23",
+      "method": "B_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 8.100178092718124e-06
+    },
+    {
+      "id": "B23",
+      "method": "C_scoped_ontology",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 1.600012183189392e-06
+    },
+    {
+      "id": "B23",
+      "method": "D_existing_bundle",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 0.00023159990087151527
+    },
+    {
+      "id": "B23",
+      "method": "E_dense_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:266:79",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1713"
+      ],
+      "valid_originals": true,
+      "seconds": 0.392758599948138
+    },
+    {
+      "id": "B23",
+      "method": "F_dense_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 7.3998235166072845e-06
+    },
+    {
+      "id": "B24",
+      "method": "A_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:267:1393",
+        "kb-health-2304:267:1348",
+        "sf-direct-2605-1:31:1800",
+        "sf-direct-2605-1:31:900",
+        "kb-health-2304:267:1713"
+      ],
+      "valid_originals": true,
+      "seconds": 0.3845697999931872
+    },
+    {
+      "id": "B24",
+      "method": "B_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 0.0011021001264452934
+    },
+    {
+      "id": "B24",
+      "method": "C_scoped_ontology",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 0.0008132001385092735
+    },
+    {
+      "id": "B24",
+      "method": "D_existing_bundle",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 0.001278699841350317
+    },
+    {
+      "id": "B24",
+      "method": "E_dense_raw",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": true,
+      "forbidden_attachment": true,
+      "citation_count": 5,
+      "citation_ids": [
+        "kb-health-2304:264:926",
+        "kb-health-2304:267:1348",
+        "kb-health-2304:266:79",
+        "kb-health-2304:269:819",
+        "kb-health-2304:267:1713"
+      ],
+      "valid_originals": true,
+      "seconds": 0.34237710013985634
+    },
+    {
+      "id": "B24",
+      "method": "F_dense_scoped",
+      "required": 0,
+      "recovered": 0,
+      "wrong_scope": false,
+      "forbidden_attachment": false,
+      "citation_count": 0,
+      "citation_ids": [],
+      "valid_originals": true,
+      "seconds": 0.32515159994363785
+    }
+  ],
+  "limitations": [
+    "single author; synthetic; not expert-adjudicated",
+    "new wording but previously developed concepts; not external blind test",
+    "selected pages; no insurer-outcome accuracy",
+    "D returns more than five citations; recall must be read with citation burden",
+    "scope purity is not semantic precision; no claim of complete relevance labels",
+    "warm single-run local latency; not production SLA or user task time",
+    "E/F: local KURE-v1 via Ollama, query = case text + rider like A; no score threshold (the chat test version has none), so E/F always return five citations when chunks exist"
+  ],
+  "publication_note": "Historical local run. Aggregate arithmetic is reproducible here; original retrieval and embeddings require private corpus. No source quotes or customer records are included."
+}
