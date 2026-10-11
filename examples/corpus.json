@@ -1,0 +1,136 @@
+{
+  "kind": "handwritten_synthetic_demonstration_not_insurance_terms",
+  "query": "내시경 용종 제거",
+  "contract": {
+    "company": "예시회사",
+    "product": "예시상품",
+    "version": "2026-01",
+    "rider": "기본특약"
+  },
+  "documents": [
+    {
+      "id": "demo-current",
+      "company": "예시회사",
+      "product": "예시상품",
+      "version": "2026-01",
+      "text": "내시경 용종 제거의 자료를 확인한다. 이 문장은 검색 동작을 보여 주기 위해 지어낸 것이다.\n진단을 위한 검사만 한 경우에는 추가 확인이 필요하다.\n내시경 용종 제거 내시경 용종 제거 내시경 용종 제거",
+      "sha256": "440cfbd4a55040ef0dc2b75ef0ef8d7fabd41156b70808ed9352029d90143d5b"
+    },
+    {
+      "id": "demo-old",
+      "company": "예시회사",
+      "product": "예시상품",
+      "version": "2025-01",
+      "text": "내시경 용종 제거 자료를 확인한다.",
+      "sha256": "8cd507970565401d85c07a6df52403bec59a4761ed03005dce0ad2e256949602"
+    },
+    {
+      "id": "demo-other-company",
+      "company": "다른회사",
+      "product": "예시상품",
+      "version": "2026-01",
+      "text": "내시경 용종 제거 자료를 확인한다.",
+      "sha256": "8cd507970565401d85c07a6df52403bec59a4761ed03005dce0ad2e256949602"
+    },
+    {
+      "id": "demo-other-product",
+      "company": "예시회사",
+      "product": "다른상품",
+      "version": "2026-01",
+      "text": "내시경 용종 제거 자료를 확인한다.",
+      "sha256": "8cd507970565401d85c07a6df52403bec59a4761ed03005dce0ad2e256949602"
+    }
+  ],
+  "chunks": [
+    {
+      "id": "current-event",
+      "document_id": "demo-current",
+      "riders": [
+        "기본특약"
+      ],
+      "roles": [
+        "event"
+      ],
+      "article": "가상 조항 1",
+      "quote": "내시경 용종 제거의 자료를 확인한다. 이 문장은 검색 동작을 보여 주기 위해 지어낸 것이다.",
+      "start": 0,
+      "end": 51,
+      "sha256": "440cfbd4a55040ef0dc2b75ef0ef8d7fabd41156b70808ed9352029d90143d5b"
+    },
+    {
+      "id": "current-exclusion",
+      "document_id": "demo-current",
+      "riders": [
+        "기본특약"
+      ],
+      "roles": [
+        "exclusion"
+      ],
+      "article": "가상 조항 2",
+      "quote": "진단을 위한 검사만 한 경우에는 추가 확인이 필요하다.",
+      "start": 52,
+      "end": 82,
+      "sha256": "440cfbd4a55040ef0dc2b75ef0ef8d7fabd41156b70808ed9352029d90143d5b"
+    },
+    {
+      "id": "other-rider-event",
+      "document_id": "demo-current",
+      "riders": [
+        "별도특약"
+      ],
+      "roles": [
+        "event"
+      ],
+      "article": "내시경 용종 제거",
+      "quote": "내시경 용종 제거 내시경 용종 제거 내시경 용종 제거",
+      "start": 83,
+      "end": 112,
+      "sha256": "440cfbd4a55040ef0dc2b75ef0ef8d7fabd41156b70808ed9352029d90143d5b"
+    },
+    {
+      "id": "old-event",
+      "document_id": "demo-old",
+      "riders": [
+        "기본특약"
+      ],
+      "roles": [
+        "event"
+      ],
+      "article": "가상 조항",
+      "quote": "내시경 용종 제거 자료를 확인한다.",
+      "start": 0,
+      "end": 19,
+      "sha256": "8cd507970565401d85c07a6df52403bec59a4761ed03005dce0ad2e256949602"
+    },
+    {
+      "id": "other-company-event",
+      "document_id": "demo-other-company",
+      "riders": [
+        "기본특약"
+      ],
+      "roles": [
+        "event"
+      ],
+      "article": "가상 조항",
+      "quote": "내시경 용종 제거 자료를 확인한다.",
+      "start": 0,
+      "end": 19,
+      "sha256": "8cd507970565401d85c07a6df52403bec59a4761ed03005dce0ad2e256949602"
+    },
+    {
+      "id": "other-product-event",
+      "document_id": "demo-other-product",
+      "riders": [
+        "기본특약"
+      ],
+      "roles": [
+        "event"
+      ],
+      "article": "가상 조항",
+      "quote": "내시경 용종 제거 자료를 확인한다.",
+      "start": 0,
+      "end": 19,
+      "sha256": "8cd507970565401d85c07a6df52403bec59a4761ed03005dce0ad2e256949602"
+    }
+  ]
+}
