@@ -22,18 +22,27 @@ def bigrams(text):
 
 def valid_citation(chunk, documents):
     """The source text, hash and offsets must agree; no generated quotation."""
-    doc = next((d for d in documents if d["id"] == chunk["document_id"]), None)
-    if doc is None:
+    if not isinstance(chunk, dict) or not isinstance(chunk.get("document_id"), str):
         return False
-    raw = doc["text"]
-    start, end = chunk["start"], chunk["end"]
+    # A repeated source ID is ambiguous even if the first copy has a matching hash.
+    # Never choose a source by list order when its identity cannot be established.
+    matches = [d for d in documents if isinstance(d, dict) and d.get("id") == chunk["document_id"]]
+    if len(matches) != 1:
+        return False
+    doc = matches[0]
+    raw, quote = doc.get("text"), chunk.get("quote")
+    if not isinstance(raw, str) or not isinstance(quote, str):
+        return False
+    start, end = chunk.get("start"), chunk.get("end")
     return (type(start) is int and type(end) is int and 0 <= start < end <= len(raw)
-            and hashlib.sha256(raw.encode()).hexdigest() == doc["sha256"] == chunk["sha256"]
-            and chunk["quote"] == raw[start:end])
+            and hashlib.sha256(raw.encode()).hexdigest() == doc.get("sha256") == chunk.get("sha256")
+            and quote == raw[start:end])
 
 
 def rank(query, chunks, limit=5):
     """BM25 adapted from TermsIndex.search; corpus statistics follow filtering."""
+    # Recompute document frequency inside the selected contract scope. The score
+    # ranks lexical matches; it is neither a probability nor a coverage decision.
     vectors = [Counter(bigrams(c["quote"] + " " + c["article"])) for c in chunks]
     df = Counter(t for vector in vectors for t in vector)
     average = sum(sum(v.values()) for v in vectors) / max(len(vectors), 1)
@@ -60,7 +69,7 @@ def retrieve(corpus, query, contract, *, scoped=True, bundle=False, limit=5):
     documents = corpus["documents"]
     candidates = corpus["chunks"]
     if scoped:
-        if any(not isinstance(contract.get(k), str) or not contract[k].strip()
+        if not isinstance(contract, dict) or any(not isinstance(contract.get(k), str) or not contract[k].strip()
                for k in ("company", "product", "version", "rider")):
             return held
         matches = [d for d in documents if all(canonical(d[k]) == canonical(contract[k])
@@ -77,6 +86,8 @@ def retrieve(corpus, query, contract, *, scoped=True, bundle=False, limit=5):
         if not scoped:
             raise ValueError("bundle requires a verified scope")
         seen = {c["id"] for c in hits}
+        # Add low-ranked exclusions only after a query hit in the verified scope.
+        # These companions have no ranking score and can exceed the top-k limit.
         hits += [dict(c, score=None) for c in candidates
                  if c["id"] not in seen and BUNDLE_ROLES.intersection(c["roles"])]
     return {"status": "evidence_for_review", "generation_used": False, "citations": hits}

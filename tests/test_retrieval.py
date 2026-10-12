@@ -56,6 +56,33 @@ class RetrievalTests(unittest.TestCase):
         self.corpus["documents"][0]["text"] += "수정"
         self.assertEqual(self.search()["citations"], [])
 
+    def test_duplicate_document_id_is_not_an_unambiguous_source(self):
+        chunk = self.corpus["chunks"][0]
+        self.corpus["documents"].append(dict(self.corpus["documents"][0], product="다른 가상 상품"))
+        self.assertFalse(valid_citation(chunk, self.corpus["documents"]))
+        self.assertEqual(self.search(bundle=True)["citations"], [])
+
+    def test_incomplete_citation_is_rejected_without_an_exception(self):
+        chunk = self.corpus["chunks"][0]
+        for key in ("document_id", "quote", "start", "end", "sha256"):
+            with self.subTest(key=key):
+                broken = {k: v for k, v in chunk.items() if k != key}
+                self.assertFalse(valid_citation(broken, self.corpus["documents"]))
+
+    def test_invalid_source_text_is_rejected(self):
+        chunk = self.corpus["chunks"][0]
+        for value in (None, 42, []):
+            with self.subTest(value=value):
+                self.corpus["documents"][0]["text"] = value
+                self.assertFalse(valid_citation(chunk, self.corpus["documents"]))
+
+    def test_missing_contract_holds_without_citations(self):
+        for contract in (None, [], "", True):
+            with self.subTest(contract=contract):
+                result = retrieve(self.corpus, self.query, contract, bundle=True)
+                self.assertEqual(result["status"], "hold")
+                self.assertEqual(result["citations"], [])
+
     def test_generation_and_payout_are_not_returned(self):
         result = self.search()
         self.assertFalse(result["generation_used"])
