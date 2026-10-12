@@ -68,6 +68,9 @@ class RetrievalTests(unittest.TestCase):
             with self.subTest(key=key):
                 broken = {k: v for k, v in chunk.items() if k != key}
                 self.assertFalse(valid_citation(broken, self.corpus["documents"]))
+                self.corpus["chunks"] = [broken]
+                for options in ({}, {"bundle": True}, {"scoped": False}):
+                    self.assertEqual(self.search(**options)["citations"], [])
 
     def test_invalid_source_text_is_rejected(self):
         chunk = self.corpus["chunks"][0]

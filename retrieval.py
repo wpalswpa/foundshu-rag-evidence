@@ -76,7 +76,7 @@ def retrieve(corpus, query, contract, *, scoped=True, bundle=False, limit=5):
                     for k in ("company", "product", "version"))]
         if len(matches) != 1:
             return held
-        candidates = [c for c in candidates if c["document_id"] == matches[0]["id"]
+        candidates = [c for c in candidates if isinstance(c, dict) and c.get("document_id") == matches[0]["id"]
                       and canonical(contract["rider"]) in {canonical(r) for r in c["riders"]}]
     candidates = [c for c in candidates if valid_citation(c, documents)]
     hits = rank(query, candidates, limit)
