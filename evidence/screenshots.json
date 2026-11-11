@@ -2,30 +2,30 @@
   {
     "file": "docs/images/intro.png",
     "description": "소개 화면(데스크톱 1440px): 큰 질문 제목, 흐르는 키워드, 실제 답 화면",
-    "sha256": "ed4a6d4e8d54e1711490d7c21ebed4e907ebc0d55a56701daa6994a0ff86c40d",
+    "sha256": "3dc7ce6b45d4ee37c5aa0d914d2445af676daa6199af5f7a34c2f0a4f33b60cf",
     "type": "current_service_local_run",
-    "captured": "2026-11-11",
-    "service_revision": "foundshu-00028-fjk",
+    "captured": "2026-11-12",
+    "service_revision": "foundshu-00036-jwg",
     "data": "example_question_public_terms",
     "retouched": false
   },
   {
     "file": "docs/images/answer-burn.png",
-    "description": "'뜨거운 물에 데여서 화상을 입었어요'의 답(모바일 390px): 1번 화상진단비, 약관 정의를 옮긴 기준 줄, 지급 조항",
-    "sha256": "b35620a6420096c855feaa462e33330c5379414df3a4e07cdba947c1f6fd8678",
+    "description": "'뜨거운 물에 데여서 화상을 입었어요'의 답(모바일 390px): 진단비 묶음의 대표 화상진단비, 약관 정의를 옮긴 기준 줄, 같은 종류 담보 목록",
+    "sha256": "16692797663b81ac7a635b0fd27edcfe66f030d7bb0da1b294effe4b20af9b57",
     "type": "current_service_local_run",
-    "captured": "2026-11-11",
-    "service_revision": "foundshu-00028-fjk",
+    "captured": "2026-11-12",
+    "service_revision": "foundshu-00036-jwg",
     "data": "example_question_public_terms",
     "retouched": false
   },
   {
     "file": "docs/images/answer-exclusion.png",
-    "description": "'백내장 수술했어요'의 답(모바일 390px): 이름에 백내장 제외가 붙은 담보를 카드에서 빼고 안내 칸에 남김",
-    "sha256": "45b49040ce0705933f98f635d3a1fbc5fcb43c7d172493ff55dc258f56fdafdc",
+    "description": "'백내장 수술했어요'의 답(모바일 390px): 진단비·수술비·종별 수술비·실손 묶음, 이름에 백내장 제외가 붙은 담보를 뺐다는 안내, 수술 종 분류",
+    "sha256": "90ea6d91c3719095931a3a15a48442cbb616e65f1eaea4e41843b17f9af6617e",
     "type": "current_service_local_run",
-    "captured": "2026-11-11",
-    "service_revision": "foundshu-00028-fjk",
+    "captured": "2026-11-12",
+    "service_revision": "foundshu-00036-jwg",
     "data": "example_question_public_terms",
     "retouched": false
   },
@@ -34,8 +34,8 @@
     "description": "'보험금을 적게 받았어요'의 답(모바일 390px): 경위가 없어 담보 대신 대표 사유 네 가지를 선택지로 보임",
     "sha256": "faded7174447aec64afe099851bf13bd89ec41b475f63c21621aaad4e7af2d2b",
     "type": "current_service_local_run",
-    "captured": "2026-11-11",
-    "service_revision": "foundshu-00028-fjk",
+    "captured": "2026-11-12",
+    "service_revision": "foundshu-00036-jwg",
     "data": "example_question_public_terms",
     "retouched": false
   }
