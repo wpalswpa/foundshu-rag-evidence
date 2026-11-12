@@ -1,41 +1,41 @@
 [
   {
     "file": "docs/images/intro.png",
-    "description": "소개 화면(데스크톱 1440px): 큰 질문 제목, 흐르는 예시 단추, 휴대폰 틀 안에 실제 답이 아래부터 쌓이는 화면",
-    "sha256": "aadfd8717b009a96048502da5a7f1388734d6d68cbcc6877e188cf8f68088ca8",
+    "description": "소개 화면(데스크톱 1440px): 큰 질문 제목, 책 읽는 땅콩과 말풍선, 흐르는 예시 단추, 휴대폰 틀 안에 실제 답이 아래부터 쌓이는 화면",
+    "sha256": "2aaa06cecfd0514aac246473601b312b03621325d3a03c29b8f38aeadad97c00",
     "type": "current_service_local_run",
     "captured": "2026-11-12",
-    "service_revision": "foundshu-00041-qzx",
+    "service_revision": "foundshu-00042-px8",
     "data": "example_question_public_terms",
     "retouched": false
   },
   {
     "file": "docs/images/answer-burn.png",
-    "description": "'뜨거운 물에 데여서 화상을 입었어요'의 답(모바일 390px): 진단비 묶음의 대표 화상진단비, 약관 정의를 옮긴 기준 줄, 같은 종류 담보 목록",
-    "sha256": "f39fdde39e3852e4e4e3fd04b61a801ac9584895686204a9c5478bb7405fcd2e",
+    "description": "'뜨거운 물에 데여서 화상을 입었어요'의 답(모바일 390px): 큰 분류 첫 줄과 원인 줄, 진단비 칸의 찾아볼 이름 예시, 대표 화상진단비와 약관 정의를 옮긴 기준 줄, 같은 종류 담보 목록, 실손 칸",
+    "sha256": "ea896ec60ee6d33f1da5226de12271b3c79a516eb4011734d7f07732c650ad62",
     "type": "current_service_local_run",
     "captured": "2026-11-12",
-    "service_revision": "foundshu-00041-qzx",
+    "service_revision": "foundshu-00042-px8",
     "data": "example_question_public_terms",
     "retouched": false
   },
   {
     "file": "docs/images/answer-exclusion.png",
-    "description": "'백내장 수술했어요'의 답(모바일 390px): 진단비·수술비·종별 수술비·실손 묶음, 실손 계산 열기, 이름에 백내장 제외가 붙은 담보를 뺐다는 안내, 수술 종 분류, 준비할 서류 확인 목록",
-    "sha256": "2659e4763a85cf7367256813abb122f037ed5185572805916d36d67a8788c636",
+    "description": "'백내장 수술했어요'의 답(모바일 390px): 큰 분류 첫 줄, 질병 수술비 칸의 찾아볼 이름 예시와 수술비·종별 수술비 묶음, 실손 칸과 실손 계산 열기, 이름에 백내장 제외가 붙은 담보를 뺐다는 안내, 수술 종 분류",
+    "sha256": "e39403d28f8f3b24c88c00ea1d16061f52c98b0d48114600cd9abd687a8b5396",
     "type": "current_service_local_run",
     "captured": "2026-11-12",
-    "service_revision": "foundshu-00041-qzx",
+    "service_revision": "foundshu-00042-px8",
     "data": "example_question_public_terms",
     "retouched": false
   },
   {
     "file": "docs/images/clarify.png",
     "description": "'보험금을 적게 받았어요'의 답(모바일 390px): 경위가 없어 담보 대신 대표 사유 네 가지를 선택지로 보임",
-    "sha256": "18cf3a0cb5120a2e702e339c74a7b258333d9b0cc0635698c7a4d492148ace27",
+    "sha256": "645325d48b45c26ca93f617bcdcad03f9623da11ec6cf626784a04c4d014a561",
     "type": "current_service_local_run",
     "captured": "2026-11-12",
-    "service_revision": "foundshu-00041-qzx",
+    "service_revision": "foundshu-00042-px8",
     "data": "example_question_public_terms",
     "retouched": false
   }
