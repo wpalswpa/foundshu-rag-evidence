@@ -1,6 +1,6 @@
 # 사고 경위로 보험 약관의 담보와 근거 조항을 찾는 피넛
 
-[![검증](https://github.com/wpalswpa/foundshu-rag-evidence/actions/workflows/verify.yml/badge.svg)](https://github.com/wpalswpa/foundshu-rag-evidence/actions/workflows/verify.yml)
+[![검증](https://github.com/wpalswpa/pnut-rag-evidence/actions/workflows/verify.yml/badge.svg)](https://github.com/wpalswpa/pnut-rag-evidence/actions/workflows/verify.yml)
 
 다쳤거나 아팠던 일을 평소 말로 적으면 세 가지를 알려 준다.
 - 확인해 볼 보험금 종류(진단비·수술비·입원일당·실손)
@@ -119,8 +119,8 @@ flowchart TD
 | [docs/design.md](docs/design.md), [docs/provenance.md](docs/provenance.md) | 공개 재현의 범위와 비공개 서비스 코드와의 대응 |
 
 ```bash
-git clone https://github.com/wpalswpa/foundshu-rag-evidence.git
-cd foundshu-rag-evidence
+git clone https://github.com/wpalswpa/pnut-rag-evidence.git
+cd pnut-rag-evidence
 python retrieval.py
 python -m unittest discover -s tests -v
 python evidence/check_record.py
