@@ -1,42 +1,52 @@
 [
-  {
-    "file": "docs/images/intro.png",
-    "description": "소개 화면(데스크톱 1440px, 움직임 줄이기): 왼쪽 위 삼선 메뉴, 큰 질문 제목, 책 읽는 땅콩(테두리 없는 입체 화풍)과 말풍선, 예시 단추, 휴대폰 틀 안의 실제 답 화면",
-    "sha256": "9fbc83703791684b5d64c28ddd79e0074fa905cfed46f193f301c3704ea2fb7b",
-    "type": "current_service_local_run",
-    "captured": "2026-11-12",
-    "service_revision": "foundshu-00050-tum",
-    "data": "example_question_public_terms",
-    "retouched": false
-  },
-  {
-    "file": "docs/images/answer-burn.png",
-    "description": "'뜨거운 물에 데여서 화상을 입었어요'의 답(모바일 390px): 큰 분류 첫 줄과 원인 줄, 진단비 칸의 찾아볼 이름 예시, 대표 화상진단비와 약관 정의를 옮긴 기준 줄, 같은 종류 담보 목록, 실손 칸",
-    "sha256": "4c313b2594d53bd6183b76a1c72703359afbfc3e0d154f0b0efc00faefee31dc",
-    "type": "current_service_local_run",
-    "captured": "2026-11-12",
-    "service_revision": "foundshu-00047-peb",
-    "data": "example_question_public_terms",
-    "retouched": false
-  },
-  {
-    "file": "docs/images/answer-exclusion.png",
-    "description": "'백내장 수술했어요'의 답(모바일 390px): 큰 분류 첫 줄, 질병 수술비 칸의 찾아볼 이름 예시와 수술비·종별 수술비 묶음, 실손 칸과 실손 계산 열기, 이름에 백내장 제외가 붙은 담보를 뺐다는 안내, 수술 종 분류",
-    "sha256": "ed1754f13ae5f4414450257db3a2e3f6946dbe3ac2969b68f56da1053335c154",
-    "type": "current_service_local_run",
-    "captured": "2026-11-12",
-    "service_revision": "foundshu-00047-peb",
-    "data": "example_question_public_terms",
-    "retouched": false
-  },
-  {
-    "file": "docs/images/clarify.png",
-    "description": "'보험금을 적게 받았어요'의 답(모바일 390px): 경위가 없어 담보 대신 대표 사유 네 가지를 선택지로 보임",
-    "sha256": "fe521c81f326aa00901b32f1a5af8e121b5ca75eebb1540c23a80be733362135",
-    "type": "current_service_local_run",
-    "captured": "2026-11-12",
-    "service_revision": "foundshu-00047-peb",
-    "data": "example_question_public_terms",
-    "retouched": false
-  }
+ {
+  "file": "docs/images/intro.png",
+  "description": "소개 화면(데스크톱 1440px, 움직임 줄이기): 큰 질문 제목, 책 읽는 땅콩 캐릭터와 말풍선, 흐르는 예시 질문 단추, 아래쪽 휴대폰 틀 안의 실제 답 화면",
+  "sha256": "cd26e84127fed98eb6dda3bf8934e3cddf092eb9e2c48df06c774fa7f155eca7",
+  "type": "public_demo_capture",
+  "captured": "2026-11-12",
+  "service_revision": "foundshu-00119-hem",
+  "data": "example_question_public_terms",
+  "retouched": false
+ },
+ {
+  "file": "docs/images/answer-fracture.png",
+  "description": "'다리 부러졌어요'의 답 첫 화면(모바일 390px): 결론 '이 일이면 진단비·실손의료비를 확인해 보세요', 질병·상해 판정 줄, ① 확인해 볼 담보(골절진단비·실손의료비, 체크된 채), 결과 보기 단추",
+  "sha256": "53f8acef58940728aa70a09dcea067099acda3d10cff847015fd673f86279965",
+  "type": "public_demo_capture",
+  "captured": "2026-11-12",
+  "service_revision": "foundshu-00119-hem",
+  "data": "example_question_public_terms",
+  "retouched": false
+ },
+ {
+  "file": "docs/images/answer-docs.png",
+  "description": "같은 답에서 결과 보기를 누른 뒤(모바일 390px): ③ 떼 올 서류 네 가지와 쓰는 담보, 출처 표시(실무 경험), 교통사고 지급결의서 안내",
+  "sha256": "90c2aebcc205c66c6681ef15f60b87bf7dbb3a45d3c8a22d3ca0f657acf5ef02",
+  "type": "public_demo_capture",
+  "captured": "2026-11-12",
+  "service_revision": "foundshu-00119-hem",
+  "data": "example_question_public_terms",
+  "retouched": false
+ },
+ {
+  "file": "docs/images/answer-crown.png",
+  "description": "'크라운'의 답(모바일 390px): ① 치과크라운치료 담보, 실손 '보통 안 나와요'와 표준약관 쪽수, 1세대 실손이라면 다쳐서 받은 치과 치료는 나올 수 있다는 줄과 출처",
+  "sha256": "3844ad0e13403ea7ca103b20f68f77c569682bf47e4ec8f8d252e1f154109cd0",
+  "type": "public_demo_capture",
+  "captured": "2026-11-12",
+  "service_revision": "foundshu-00119-hem",
+  "data": "example_question_public_terms",
+  "retouched": false
+ },
+ {
+  "file": "docs/images/clarify.png",
+  "description": "'보험금을 적게 받았어요'의 답(모바일 390px): 무슨 일인지 없어 담보 대신 대표 사유를 선택지로 보임",
+  "sha256": "ce22619bb2c4c828bf2c4a9c0101db0a4038e21f5c9e519427f42d8c550b4879",
+  "type": "public_demo_capture",
+  "captured": "2026-11-12",
+  "service_revision": "foundshu-00119-hem",
+  "data": "example_question_public_terms",
+  "retouched": false
+ }
 ]
