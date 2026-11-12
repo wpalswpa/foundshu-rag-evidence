@@ -1,41 +1,41 @@
 [
   {
     "file": "docs/images/intro.png",
-    "description": "소개 화면(데스크톱 1440px): 큰 질문 제목, 흐르는 키워드, 실제 답 화면",
-    "sha256": "3dc7ce6b45d4ee37c5aa0d914d2445af676daa6199af5f7a34c2f0a4f33b60cf",
+    "description": "소개 화면(데스크톱 1440px): 큰 질문 제목, 흐르는 예시 단추, 휴대폰 틀 안에 실제 답이 아래부터 쌓이는 화면",
+    "sha256": "aadfd8717b009a96048502da5a7f1388734d6d68cbcc6877e188cf8f68088ca8",
     "type": "current_service_local_run",
     "captured": "2026-11-12",
-    "service_revision": "foundshu-00036-jwg",
+    "service_revision": "foundshu-00041-qzx",
     "data": "example_question_public_terms",
     "retouched": false
   },
   {
     "file": "docs/images/answer-burn.png",
     "description": "'뜨거운 물에 데여서 화상을 입었어요'의 답(모바일 390px): 진단비 묶음의 대표 화상진단비, 약관 정의를 옮긴 기준 줄, 같은 종류 담보 목록",
-    "sha256": "16692797663b81ac7a635b0fd27edcfe66f030d7bb0da1b294effe4b20af9b57",
+    "sha256": "f39fdde39e3852e4e4e3fd04b61a801ac9584895686204a9c5478bb7405fcd2e",
     "type": "current_service_local_run",
     "captured": "2026-11-12",
-    "service_revision": "foundshu-00036-jwg",
+    "service_revision": "foundshu-00041-qzx",
     "data": "example_question_public_terms",
     "retouched": false
   },
   {
     "file": "docs/images/answer-exclusion.png",
-    "description": "'백내장 수술했어요'의 답(모바일 390px): 진단비·수술비·종별 수술비·실손 묶음, 이름에 백내장 제외가 붙은 담보를 뺐다는 안내, 수술 종 분류",
-    "sha256": "90ea6d91c3719095931a3a15a48442cbb616e65f1eaea4e41843b17f9af6617e",
+    "description": "'백내장 수술했어요'의 답(모바일 390px): 진단비·수술비·종별 수술비·실손 묶음, 실손 계산 열기, 이름에 백내장 제외가 붙은 담보를 뺐다는 안내, 수술 종 분류, 준비할 서류 확인 목록",
+    "sha256": "2659e4763a85cf7367256813abb122f037ed5185572805916d36d67a8788c636",
     "type": "current_service_local_run",
     "captured": "2026-11-12",
-    "service_revision": "foundshu-00036-jwg",
+    "service_revision": "foundshu-00041-qzx",
     "data": "example_question_public_terms",
     "retouched": false
   },
   {
     "file": "docs/images/clarify.png",
     "description": "'보험금을 적게 받았어요'의 답(모바일 390px): 경위가 없어 담보 대신 대표 사유 네 가지를 선택지로 보임",
-    "sha256": "faded7174447aec64afe099851bf13bd89ec41b475f63c21621aaad4e7af2d2b",
+    "sha256": "18cf3a0cb5120a2e702e339c74a7b258333d9b0cc0635698c7a4d492148ace27",
     "type": "current_service_local_run",
     "captured": "2026-11-12",
-    "service_revision": "foundshu-00036-jwg",
+    "service_revision": "foundshu-00041-qzx",
     "data": "example_question_public_terms",
     "retouched": false
   }
