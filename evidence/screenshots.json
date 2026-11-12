@@ -2,30 +2,30 @@
  {
   "file": "docs/images/intro.png",
   "description": "소개 화면(데스크톱 1440px, 움직임 줄이기): 큰 질문 제목, 책 읽는 땅콩 캐릭터와 말풍선, 흐르는 예시 질문 단추, 아래쪽 휴대폰 틀 안의 실제 답 화면",
-  "sha256": "cd26e84127fed98eb6dda3bf8934e3cddf092eb9e2c48df06c774fa7f155eca7",
+  "sha256": "53179ffb96de3c42d2d0e4d8023f5c983c48bce58aed016164c003309a067477",
   "type": "public_demo_capture",
   "captured": "2026-11-12",
-  "service_revision": "foundshu-00119-hem",
+  "service_revision": "foundshu-00122-qer",
   "data": "example_question_public_terms",
   "retouched": false
  },
  {
   "file": "docs/images/answer-fracture.png",
-  "description": "'다리 부러졌어요'의 답 첫 화면(모바일 390px): 결론 '이 일이면 진단비·실손의료비를 확인해 보세요', 질병·상해 판정 줄, ① 확인해 볼 담보(골절진단비·실손의료비, 체크된 채), 결과 보기 단추",
-  "sha256": "53f8acef58940728aa70a09dcea067099acda3d10cff847015fd673f86279965",
+  "description": "'다리 부러졌어요'의 답(모바일 390px): ① 확인해 볼 담보(골절진단비·실손의료비, 체크된 채), 실손 줄 아래 '실손 보험금 계산해 보기' 단추, ② 이런 경우라면(수술을 받았다면 골절수술비), 결과 보기 단추",
+  "sha256": "27a8d6b49a8a2de40e27e0c75cfa12ada3cdb4bcc093f9fc9ca1abd626e87c0c",
   "type": "public_demo_capture",
   "captured": "2026-11-12",
-  "service_revision": "foundshu-00119-hem",
+  "service_revision": "foundshu-00122-qer",
   "data": "example_question_public_terms",
   "retouched": false
  },
  {
   "file": "docs/images/answer-docs.png",
-  "description": "같은 답에서 결과 보기를 누른 뒤(모바일 390px): ③ 떼 올 서류 네 가지와 쓰는 담보, 출처 표시(실무 경험), 교통사고 지급결의서 안내",
-  "sha256": "90c2aebcc205c66c6681ef15f60b87bf7dbb3a45d3c8a22d3ca0f657acf5ef02",
+  "description": "같은 답에서 결과 보기를 누른 뒤(모바일 390px): ③ 떼 올 서류 네 가지와 각 서류를 쓰는 담보, 공통 서류 한 줄, 교통사고면 지급결의서 안내",
+  "sha256": "f2103837a66fdfafd739629ee36f371f41cf63041aae934749e3ca422e070390",
   "type": "public_demo_capture",
   "captured": "2026-11-12",
-  "service_revision": "foundshu-00119-hem",
+  "service_revision": "foundshu-00122-qer",
   "data": "example_question_public_terms",
   "retouched": false
  },
@@ -35,7 +35,7 @@
   "sha256": "3844ad0e13403ea7ca103b20f68f77c569682bf47e4ec8f8d252e1f154109cd0",
   "type": "public_demo_capture",
   "captured": "2026-11-12",
-  "service_revision": "foundshu-00119-hem",
+  "service_revision": "foundshu-00122-qer",
   "data": "example_question_public_terms",
   "retouched": false
  },
@@ -45,7 +45,7 @@
   "sha256": "ce22619bb2c4c828bf2c4a9c0101db0a4038e21f5c9e519427f42d8c550b4879",
   "type": "public_demo_capture",
   "captured": "2026-11-12",
-  "service_revision": "foundshu-00119-hem",
+  "service_revision": "foundshu-00122-qer",
   "data": "example_question_public_terms",
   "retouched": false
  }
