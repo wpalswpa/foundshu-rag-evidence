@@ -1,11 +1,11 @@
 [
   {
     "file": "docs/images/intro.png",
-    "description": "소개 화면(데스크톱 1440px): 왼쪽 위 삼선 메뉴, 큰 질문 제목, 책 읽는 땅콩과 말풍선, 흐르는 예시 단추, 휴대폰 틀 안에 실제 답이 아래부터 쌓이는 화면",
-    "sha256": "4d084bfb0c74c302b853b7dbf3642829fd13c981d28adedac4a7f9893249b1a9",
+    "description": "소개 화면(데스크톱 1440px, 움직임 줄이기): 왼쪽 위 삼선 메뉴, 큰 질문 제목, 책 읽는 땅콩(테두리 없는 입체 화풍)과 말풍선, 예시 단추, 휴대폰 틀 안의 실제 답 화면",
+    "sha256": "9fbc83703791684b5d64c28ddd79e0074fa905cfed46f193f301c3704ea2fb7b",
     "type": "current_service_local_run",
     "captured": "2026-11-12",
-    "service_revision": "foundshu-00047-peb",
+    "service_revision": "foundshu-00050-tum",
     "data": "example_question_public_terms",
     "retouched": false
   },
